@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Create KEYSPACE shaik
 with REPLICATION = {'class:'SimpleStrategy','replication_factor':1};
 
@@ -14,4 +15,22 @@ INSERT INTO users(ID,NAME,ADDRESS) VALUES(121,'Ingle','Mumbai');
 INSERT INTO users(ID,NAME,ADDRESS) VALUES(131,'Pranjal','Nashik');
 INSERT INTO users(ID,NAME,ADDRESS) VALUES(102,'Subham','Assam');
 INSERT INTO users(ID,NAME,ADDRESS) VALUES(101,'Shaik','Rayachoti');
+=======
+Create KEYSPACE shaik
+with REPLICATION = {'class:'SimpleStrategy','replication_factor':1};
+
+USE shaik;
+
+CREATE TABLE users{
+ID int PRIMARY KEY,
+NAME text,
+ADDRESS text
+);
+
+INSERT INTO users(ID,NAME,ADDRESS) VALUES(151,'Ritesh','Pune');
+INSERT INTO users(ID,NAME,ADDRESS) VALUES(121,'Ingle','Mumbai');
+INSERT INTO users(ID,NAME,ADDRESS) VALUES(131,'Pranjal','Nashik');
+INSERT INTO users(ID,NAME,ADDRESS) VALUES(102,'Subham','Assam');
+INSERT INTO users(ID,NAME,ADDRESS) VALUES(101,'Shaik','Rayachoti');
+>>>>>>> 5fe2d65b999fc1c5b34bf1d91c92f34357288ebd
 INSERT INTO users(ID,NAME,ADDRESS) VALUES(103,'Keshav','Mode');
